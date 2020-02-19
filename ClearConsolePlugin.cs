@@ -7,7 +7,7 @@ namespace Espcevan.ClearConsole
     public class ClearConsole : RocketPlugin
     {
         public static ClearConsole Instance;
-        public static string PluginName = "BuilderMode";
+        public static string PluginName = "ClearConsole";
         public static string PluginVersion = " 1.0.0";
         protected override void Load()
         {
