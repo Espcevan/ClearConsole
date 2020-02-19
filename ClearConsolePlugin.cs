@@ -20,8 +20,7 @@ namespace Espcevan.ClearConsole
         protected override void Unload()
         {
             Instance = null;
-            Logger.Log("BuilderMode has been unloaded!");
-            Logger.Log("Visit Tortellio Discord for more! https://discord.gg/pzQwsew", ConsoleColor.Yellow);
+            Logger.Log("ClearConsole has been unloaded!");
         }
     }
 }
