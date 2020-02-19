@@ -1,4 +1,5 @@
 ﻿using Rocket.API;
+using SDG.Unturned;
 using System;
 using System.Collections.Generic;
 
@@ -14,9 +15,11 @@ namespace Espcevan.ClearConsole.Commands
 
         public string Syntax => string.Empty;
 
-        public List<string> Aliases => new List<string>();
+        public List<string> Aliases => new List<string>() { "cc" };
 
         public List<string> Permissions => new List<string>() { "console.clear" };
+
+        
 
         public void Execute( IRocketPlayer caller, string[] command )
         {
@@ -34,8 +37,9 @@ namespace Espcevan.ClearConsole.Commands
             Console.WriteLine("## `Y88888P' dP    dP   dP   `88888P' dP       dP    dP `88888P' `88888P8 ##");
             Console.WriteLine("############################################################################");
             Console.ResetColor();
-            Console.WriteLine("");
-            Console.Read();
+            Rocket.Unturned.Environment.Initialize();
+            
+            Console.WriteLine();
         }
     }
 }
